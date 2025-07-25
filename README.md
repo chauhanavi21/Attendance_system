@@ -30,7 +30,7 @@ A smart face-recognition based attendance system using OpenCV, KNN, and React. T
 
 ## 📁 Folder Structure
 
-\`\`\`
+```
 attendance-system/
 ├── backend/
 │   ├── app.py                # Flask backend server
@@ -46,20 +46,20 @@ attendance-system/
 │   │   │   ├── Attendance.jsx
 │   │   │   ├── Dashboard.jsx
 │   └── index.html, App.jsx, etc.
-\`\`\`
+```
 
 ---
 
-## 🧪 Setup Instructions
+## 🧪 Setup Instructions (for Windows Users)
 
-### ✅ Backend Setup (Python)
+### ✅ Backend Setup (Python + PowerShell)
 
-\`\`\`bash
-cd attendance-system/backend
+```powershell
+cd attendance-system\backend
 python -m venv venv
-.env\Scriptsctivate
+.\venv\Scripts\activate
 pip install flask flask-cors opencv-python numpy scikit-learn pywin32
-\`\`\`
+```
 
 #### 🔽 Download this file
 Place the following file inside the `backend/` directory:
@@ -67,21 +67,21 @@ Place the following file inside the `backend/` directory:
 
 ### ▶️ Run Backend Server
 
-\`\`\`bash
+```powershell
 python app.py
 # Runs on http://localhost:5000
-\`\`\`
+```
 
 ---
 
-### ✅ Frontend Setup (React)
+### ✅ Frontend Setup (React + PowerShell)
 
-\`\`\`bash
-cd attendance-system/frontend
+```powershell
+cd attendance-system\frontend
 npm install
 npm run dev
 # Runs on http://localhost:5173
-\`\`\`
+```
 
 ---
 
@@ -100,15 +100,15 @@ npm run dev
 
 Each day creates a CSV like:
 
-\`\`\`
-data/Attendance_2025-07-25.csv
+```
+data/Attendance_YYYY-MM-DD.csv
 
 Columns: NAME, TIME
 
 Example:
 Avi, 10:42:15
 John, 10:44:02
-\`\`\`
+```
 
 ---
 
